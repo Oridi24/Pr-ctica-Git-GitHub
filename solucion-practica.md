@@ -104,15 +104,15 @@ y líbranos de <em>SVN</em><br />
 
 25)**Dibujar el diagrama -> git log --graph --decorate --pretty=oneline**
 
-26)** Hacer un merge “no fast-forward” de “title” en “main” (main absorbe a title) -> git merge --no-ff tittle **
+26)**Hacer un merge “no fast-forward” de “title” en “main” (main absorbe a title) -> git merge --no-ff tittle**
 
 27)**Deshacer el merge (sin perder los cambios del working copy)-> git log --graph + git reset --hard<numero_commit>**
 
-28)** Descartar los cambios-> git reflog -> git reset --hard<numero_commit> **
+28)**Descartar los cambios-> git reflog -> git reset --hard<numero_commit>**
 
-29)** Eliminar la rama “title”-> git branch -d tittle (desde main o donde se haya hecho merge) o git Branch -D directamente(forzado)**
+29)**Eliminar la rama “title”-> git branch -d tittle (desde main o donde se haya hecho merge) o git Branch -D directamente(forzado)**
 
-30)** Rehacer el merge que hemos deshecho-> desde reflog-> ya hecho en paso 28**
+30)**Rehacer el merge que hemos deshecho-> desde reflog-> ya hecho en paso 28**
 
 En el
 repositorio, deberá existir un archivo readme.md con las respuestas a las siguientes preguntas:
