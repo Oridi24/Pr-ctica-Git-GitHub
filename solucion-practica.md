@@ -1,4 +1,4 @@
-##Solucion de la Practica Git-GitHub
+## Solucion de la Practica Git-GitHub
 
 - ¿Qué comando utilizaste en el paso 11? ¿Por qué? : git reset --hard HEAD~1 ->
 Se usó este comando para deshacer el último commit perdiendo los cambios en el working copy.
