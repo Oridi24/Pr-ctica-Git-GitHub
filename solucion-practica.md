@@ -39,7 +39,8 @@ git log ayuda a encontrar el commit inicial del poema, y git checkout <numero_co
 - ¿Qué comando o comandos usaste en el punto 33? :
 git log + git checkout <numero_commit>
 
-Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay una pregunta
+
+### Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay una pregunta
 asociada):
 1) Crear un repositorio en GitHub y clónalo en tu equipo
 2) Crear un archivo git-nuestro.md con el contenido:
