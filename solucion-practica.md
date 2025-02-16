@@ -1,18 +1,43 @@
 ##Solucion de la Practica Git-GitHub
 
-- ¿Qué comando utilizaste en el paso 11? ¿Por qué?
-- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
-- El merge del paso 13, ¿Causó algún conﬂicto? ¿Por qué?
-- El merge del paso 19, ¿Causó algún conﬂicto? ¿Por qué?
-- El merge del paso 21, ¿Causó algún conﬂicto? ¿Por qué?
-- ¿Qué comando o comandos utilizaste en el paso 25?
-- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
-- ¿Qué comando o comandos utilizaste en el paso 27?
-- ¿Qué comando o comandos utilizaste en el paso 28?
-- ¿Qué comando o comandos utilizaste en el paso 29?
-- ¿Qué comando o comandos utilizaste en el paso 30?
-- ¿Qué comando o comandos usaste en el paso 32?
-- ¿Qué comando o comandos usaste en el punto 33?
+- ¿Qué comando utilizaste en el paso 11? ¿Por qué? : git reset --hard HEAD~1 ->
+Se usó este comando para deshacer el último commit perdiendo los cambios en el working copy.
+El flag --hard asegura que tanto el staging area como el working copy vuelvan al estado del commit anterior.
+
+- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué? : git reflog + git reset --hard <numero_commit>
+git reflog permite ver el historial de cambios recientes, incluyendo commits eliminados.
+Luego, git reset --hard <numero_commit> restaura el commit deshecho en el paso anterior.
+
+- El merge del paso 13, ¿Causó algún conﬂicto? ¿Por qué? : ?? sin respuesta.
+Lo siento, no lo puedo recordar y no lo tengo claro con el historial.
+
+- El merge del paso 19, ¿Causó algún conﬂicto? ¿Por qué? :
+Si, htmlify como styled modificaron git-nuestro.md, el conflicto se resolvió manualmente antes de continuar.
+
+- El merge del paso 21, ¿Causó algún conﬂicto? ¿Por qué? : No, Porque ya habiamos resuelto el conflicto anterirmente.
+
+- ¿Qué comando o comandos utilizaste en el paso 25? : git log --graph --decorate --pretty=oneline
+Muestra el historial de commits en un formato gráfico con ramas y merges, lo que facilita visualizar el flujo de trabajo.
+
+- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué? : Sí,
+Pero aquí queremos mantener un historial claro sobre qué cambios se hicieron en cada rama.
+
+- ¿Qué comando o comandos utilizaste en el paso 27? : git log --graph + git reset --hard <numero_commit>
+
+- ¿Qué comando o comandos utilizaste en el paso 28? :git reflog + git reset --hard <numero_commit>
+¿Por qué? git reflog permite encontrar el commit anterior al merge,
+y git reset --hard <numero_commit> revierte los cambios, descartándolos completamente.
+
+- ¿Qué comando o comandos utilizaste en el paso 29? : git branch -d tittle (desde main o donde se haya hecho merge).
+Tambien era posible hacer git Branch -D directamente(forzado)
+
+- ¿Qué comando o comandos utilizaste en el paso 30? : git reflog + git reset --hard <numero_commit>
+
+- ¿Qué comando o comandos usaste en el paso 32? : git log + git checkout <numero_commit>
+git log ayuda a encontrar el commit inicial del poema, y git checkout <numero_commit> permite volver a ese estado
+
+- ¿Qué comando o comandos usaste en el punto 33? :
+git log + git checkout <numero_commit>
 
 Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay una pregunta
 asociada):
